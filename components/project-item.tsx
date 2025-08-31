@@ -15,9 +15,6 @@ export default function ProjectItem({ title, type, description, tech, image }: P
     <div className="project-item bg-stone-900 border-2 border-amber-800 p-3">
       <div className="flex flex-col md:flex-row gap-4">
         <div className="project-image flex-shrink-0">
-          <div className="relative w-full md:w-40 h-24 overflow-hidden border-2 border-amber-700">
-            <Image src={image || "/placeholder.svg"} alt={title} fill className="object-cover pixelated" />
-          </div>
         </div>
 
         <div className="project-content flex-grow">
@@ -38,10 +35,6 @@ export default function ProjectItem({ title, type, description, tech, image }: P
               </span>
             ))}
           </div>
-
-          <Link href="#" className="view-project-link">
-            VIEW QUEST DETAILS
-          </Link>
         </div>
       </div>
     </div>

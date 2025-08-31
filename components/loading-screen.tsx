@@ -88,10 +88,10 @@ export default function LoadingScreen({ isComplete, onStart }: LoadingScreenProp
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center gap-3 mb-2">
             <Gamepad2 className="h-8 w-8 text-red-500" />
-            <h1 className="text-2xl md:text-3xl font-bold text-amber-400 pixel-text">DEV.QUEST</h1>
+            <h1 className="text-2xl md:text-3xl font-bold text-amber-400 pixel-text">PORTOFOLIO</h1>
             <Gamepad2 className="h-8 w-8 text-red-500" />
           </div>
-          <p className="text-amber-200">FULL-STACK DEVELOPER PORTFOLIO</p>
+          <p className="text-amber-200">LOADING PLEASE WAIT</p>
         </div>
 
         {/* Loading Bar Container */}

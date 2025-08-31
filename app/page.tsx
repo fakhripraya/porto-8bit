@@ -64,7 +64,7 @@ export default function Home() {
                   <div className="grid md:grid-cols-2 gap-8 items-center p-4">
                     <div>
                       <h2 className="text-2xl md:text-3xl font-bold mb-4 text-amber-400 pixel-text">
-                        WELCOME TO MY REALM
+                        Hi,I'm Fakhri
                       </h2>
                       <p className="mb-6 leading-relaxed text-amber-100">
                         I'M A <span className="text-red-400">FULL-STACK DEVELOPER</span> ON AN EPIC QUEST TO CREATE
@@ -76,8 +76,8 @@ export default function Home() {
                           <span>5+ YEARS</span>
                         </div>
                         <div className="flex justify-between mb-2">
-                          <span>PROJECTS:</span>
-                          <span>50+</span>
+                          <span>REPOSITORY:</span>
+                          <span>100+</span>
                         </div>
                         <div className="flex justify-between">
                           <span>CLASS:</span>
@@ -98,8 +98,8 @@ export default function Home() {
                         <div className="character-sprite bg-stone-900 border-4 border-amber-800 p-4 rounded-md">
                           <div className="w-48 h-48 relative">
                             <img
-                              src="/placeholder.svg?height=192&width=192"
-                              alt="Developer logo"
+                              src="/myphoto.jpg?height=192&width=192"
+                              alt="My logo hehe"
                               className="pixelated"
                               width={192}
                               height={192}
@@ -138,43 +138,43 @@ export default function Home() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                       <ServiceCard
-                        title="FRONTEND DEVELOPMENT"
+                        title="REACT WEB DEVELOPMENT"
                         description="CRAFTING RESPONSIVE AND INTERACTIVE USER INTERFACES WITH MODERN FRAMEWORKS"
                         icon={<Zap className="h-6 w-6" />}
                         color="red"
                       />
 
                       <ServiceCard
-                        title="BACKEND DEVELOPMENT"
+                        title="BACKEND DEVELOPMENT (NODE,GO,.NET)"
                         description="BUILDING ROBUST APIS AND SERVER-SIDE APPLICATIONS WITH SCALABLE ARCHITECTURE"
                         icon={<Star className="h-6 w-6" />}
                         color="amber"
                       />
 
                       <ServiceCard
-                        title="MOBILE DEVELOPMENT"
+                        title="FLUTTER MOBILE DEVELOPMENT"
                         description="CREATING CROSS-PLATFORM MOBILE APPS FOR IOS AND ANDROID DEVICES"
                         icon={<Sword className="h-6 w-6" />}
                         color="green"
                       />
 
                       <ServiceCard
-                        title="DATABASE DESIGN"
-                        description="DESIGNING AND OPTIMIZING DATABASES FOR PERFORMANCE AND SCALABILITY"
+                        title="SMART CONTRACT (EVM)"
+                        description="BUILDING SECURE AND EFFICIENT DECENTRALIZED APPLICATIONS ON ETHEREUM VIRTUAL MACHINE."
                         icon={<Trophy className="h-6 w-6" />}
                         color="blue"
                       />
 
                       <ServiceCard
-                        title="DEVOPS & DEPLOYMENT"
-                        description="AUTOMATING DEPLOYMENTS AND MANAGING CLOUD INFRASTRUCTURE"
+                        title="REACT NATIVE MOBILE DEVELOPMENT"
+                        description="CREATING CROSS-PLATFORM MOBILE APPS FOR IOS AND ANDROID DEVICES"
                         icon={<Scroll className="h-6 w-6" />}
                         color="purple"
                       />
 
                       <ServiceCard
-                        title="UI/UX DESIGN"
-                        description="DESIGNING INTUITIVE USER EXPERIENCES WITH ATTENTION TO DETAIL"
+                        title="SOFTWARE ENGINEERING"
+                        description="DESIGNING INTUITIVE SOFTWARE WITH ATTENTION TO DETAIL"
                         icon={<Coins className="h-6 w-6" />}
                         color="amber"
                       />
@@ -183,7 +183,7 @@ export default function Home() {
                 </GameWindow>
 
                 {/* About Section */}
-                <GameWindow title="AGENCY STATS" id="about" className="mt-8">
+                <GameWindow title="MY STATS" id="about" className="mt-8">
                   <div className="grid md:grid-cols-2 gap-8 p-4">
                     <div className="bg-stone-900 border-2 border-amber-800 p-4">
                       <h3 className="text-xl font-bold mb-4 text-red-400 flex items-center gap-2">
@@ -191,7 +191,7 @@ export default function Home() {
                         OUR STORY
                       </h3>
                       <p className="mb-4 text-amber-100">
-                        I BEGAN MY CODING ADVENTURE IN 2019 WITH A SIMPLE "HELLO WORLD" AND HAVEN'T STOPPED EXPLORING
+                        I BEGAN MY CODING ADVENTURE IN 2016 WITH A SIMPLE "HELLO WORLD" AND HAVEN'T STOPPED EXPLORING
                         SINCE. MY JOURNEY HAS TAKEN ME THROUGH VARIOUS TECHNOLOGIES AND FRAMEWORKS.
                       </p>
                       <p className="text-amber-100">
@@ -206,15 +206,19 @@ export default function Home() {
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <Star className="h-4 w-4 text-amber-400" />
-                          <span>COMPLETED 50+ SUCCESSFUL PROJECTS</span>
+                          <span>SUCCESSSFULLY BUILD A FULLY FUNCTION SINGLE PIN PAYMENT APP</span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Star className="h-4 w-4 text-amber-400" />
-                          <span>MASTERED 10+ PROGRAMMING LANGUAGES</span>
+                          <span>SUCCESSFULL TRANSITION TO GLOBAL MOBILE APP FROM LOCAL MOBILE APP WITH FLUTTER</span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Star className="h-4 w-4 text-amber-400" />
-                          <span>CONTRIBUTED TO OPEN SOURCE PROJECTS</span>
+                          <span>SUCCESSSFULLY BUILD A FULLY FUNCTIONAL WEB3 DAPP AND EVM SMART CONTRACT WITH ERC-721</span>
+                        </li>
+                        <li className="flex items-center gap-2">
+                          <Star className="h-4 w-4 text-amber-400" />
+                          <span>SUCCESSSFULLY BUILD AN AI BOARDING HOUSE FINDER PROJECT AT ICP x FET - NEXTGEN AGENTS HACKATHON IN JUST 1 WEEK</span>
                         </li>
                       </ul>
                     </div>
@@ -225,12 +229,12 @@ export default function Home() {
                         OUR EXPERTISE
                       </h3>
                       <div className="space-y-4">
-                        <SkillMeter name="WEB DEVELOPMENT" level={95} color="red" />
-                        <SkillMeter name="UI/UX DESIGN" level={90} color="amber" />
-                        <SkillMeter name="MOBILE DEVELOPMENT" level={85} color="green" />
-                        <SkillMeter name="ECOMMERCE" level={88} color="blue" />
-                        <SkillMeter name="DIGITAL MARKETING" level={80} color="purple" />
-                        <SkillMeter name="BRANDING" level={92} color="red" />
+                        <SkillMeter name="REACT WEB DEVELOPMENT" level={95} color="red" />
+                        <SkillMeter name="BACKEND DEVELOPMENT (NODE,GO,.NET)" level={80} color="amber" />
+                        <SkillMeter name="FLUTTER MOBILE DEVELOPMENT" level={85} color="green" />
+                        <SkillMeter name="SMART CONTRACT (EVM)" level={85} color="blue" />
+                        <SkillMeter name="REACT NATIVE MOBILE DEVELOPMENT" level={80} color="purple" />
+                        <SkillMeter name="SOFTWARE ENGINEERING" level={85} color="red" />
                       </div>
                     </div>
                   </div>
@@ -251,57 +255,95 @@ export default function Home() {
                       <div className="experience-item bg-stone-900 border-2 border-amber-800 p-4">
                         <div className="flex justify-between items-start mb-2">
                           <div>
-                            <h4 className="text-lg font-bold text-red-400">SENIOR FULL-STACK DEVELOPER</h4>
-                            <div className="text-amber-400">TECH INNOVATIONS INC.</div>
+                            <h4 className="text-lg font-bold text-red-400">SMART CONTRACT DEV (EVM)</h4>
+                            <div className="text-amber-400">HYCHAN NFT HYPERLIQUID</div>
                           </div>
-                          <div className="text-green-400 text-sm">2022 - PRESENT</div>
+                          <div className="text-green-400 text-sm">2025</div>
                         </div>
-                        <p className="text-amber-100 text-sm mb-2">
-                          LEADING DEVELOPMENT OF ENTERPRISE WEB APPLICATIONS USING REACT, NODE.JS, AND AWS
-                        </p>
                         <div className="flex flex-wrap gap-2">
-                          <span className="tech-tag">REACT</span>
-                          <span className="tech-tag">NODE.JS</span>
-                          <span className="tech-tag">AWS</span>
-                          <span className="tech-tag">MONGODB</span>
+                          <span className="tech-tag">EVM</span>
+                          <span className="tech-tag">HYPEEVM</span>
+                          <span className="tech-tag">REACT JS</span>
+                          <span className="tech-tag">NEXT JS</span>
+                          <span className="tech-tag">SUPABASE</span>
+                          <span className="tech-tag">VERCEL</span>
                         </div>
                       </div>
 
                       <div className="experience-item bg-stone-900 border-2 border-amber-800 p-4">
                         <div className="flex justify-between items-start mb-2">
                           <div>
-                            <h4 className="text-lg font-bold text-red-400">FRONTEND DEVELOPER</h4>
-                            <div className="text-amber-400">DIGITAL SOLUTIONS CO.</div>
+                            <h4 className="text-lg font-bold text-red-400">FLUTTER DEVELOPER</h4>
+                            <div className="text-amber-400">HOMECREDIT INDONESIA.</div>
                           </div>
-                          <div className="text-green-400 text-sm">2020 - 2022</div>
+                          <div className="text-green-400 text-sm">2024 - 2025</div>
                         </div>
-                        <p className="text-amber-100 text-sm mb-2">
-                          DEVELOPED RESPONSIVE WEB APPLICATIONS AND IMPROVED USER EXPERIENCE ACROSS MULTIPLE PROJECTS
-                        </p>
                         <div className="flex flex-wrap gap-2">
-                          <span className="tech-tag">JAVASCRIPT</span>
-                          <span className="tech-tag">VUE.JS</span>
-                          <span className="tech-tag">CSS</span>
+                          <span className="tech-tag">FLUTTER</span>
+                          <span className="tech-tag">DART</span>
+                          <span className="tech-tag">FIREBASE</span>
+                          <span className="tech-tag">GETX</span>
                           <span className="tech-tag">FIGMA</span>
+                          <span className="tech-tag">AGILE</span>
+                          <span className="tech-tag">JIRA</span>
                         </div>
                       </div>
 
                       <div className="experience-item bg-stone-900 border-2 border-amber-800 p-4">
                         <div className="flex justify-between items-start mb-2">
                           <div>
-                            <h4 className="text-lg font-bold text-red-400">JUNIOR DEVELOPER</h4>
-                            <div className="text-amber-400">STARTUP VENTURES</div>
+                            <h4 className="text-lg font-bold text-red-400">REACT DEVELOPER</h4>
+                            <div className="text-amber-400">HOMECREDIT INDONESIA.</div>
                           </div>
-                          <div className="text-green-400 text-sm">2019 - 2020</div>
+                          <div className="text-green-400 text-sm">2021 - 2024</div>
                         </div>
-                        <p className="text-amber-100 text-sm mb-2">
-                          STARTED MY CODING ADVENTURE BUILDING WEBSITES AND LEARNING THE FUNDAMENTALS
-                        </p>
+                        <div className="flex flex-wrap gap-2">
+                          <span className="tech-tag">HTML</span>
+                          <span className="tech-tag">CSS</span>
+                          <span className="tech-tag">SCSS</span>
+                          <span className="tech-tag">TYPESCRIPT</span>
+                          <span className="tech-tag">JAVASCRIPT</span>
+                          <span className="tech-tag">REDUX</span>
+                          <span className="tech-tag">REACT JS</span>
+                          <span className="tech-tag">FIGMA</span>
+                          <span className="tech-tag">AGILE</span>
+                          <span className="tech-tag">JIRA</span>
+                        </div>
+                      </div>
+
+                      <div className="experience-item bg-stone-900 border-2 border-amber-800 p-4">
+                        <div className="flex justify-between items-start mb-2">
+                          <div>
+                            <h4 className="text-lg font-bold text-red-400">MDPST IT (FULLSTACK)</h4>
+                            <div className="text-amber-400">INDOMARCO PRISMATAMA.</div>
+                          </div>
+                          <div className="text-green-400 text-sm">2020 - 2021</div>
+                        </div>
                         <div className="flex flex-wrap gap-2">
                           <span className="tech-tag">HTML</span>
                           <span className="tech-tag">CSS</span>
                           <span className="tech-tag">JAVASCRIPT</span>
-                          <span className="tech-tag">PHP</span>
+                          <span className="tech-tag">ASP .NET</span>
+                          <span className="tech-tag">MYSQL</span>
+                          <span className="tech-tag">DBEAVER</span>
+                        </div>
+                      </div>
+
+                      <div className="experience-item bg-stone-900 border-2 border-amber-800 p-4">
+                        <div className="flex justify-between items-start mb-2">
+                          <div>
+                            <h4 className="text-lg font-bold text-red-400">IT INTERN FULLSTACK</h4>
+                            <div className="text-amber-400">INDOMARCO PRISMATAMA</div>
+                          </div>
+                          <div className="text-green-400 text-sm">2019 - 2020</div>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
+                          <span className="tech-tag">HTML</span>
+                          <span className="tech-tag">CSS</span>
+                          <span className="tech-tag">JAVASCRIPT</span>
+                          <span className="tech-tag">ASP .NET</span>
+                          <span className="tech-tag">MYSQL</span>
+                          <span className="tech-tag">DBEAVER</span>
                         </div>
                       </div>
                     </div>
@@ -312,40 +354,74 @@ export default function Home() {
                 <GameWindow title="COMPLETED QUESTS" id="projects" className="mt-8">
                   <div className="p-4">
                     <div className="text-center mb-6">
-                      <h3 className="text-xl font-bold text-amber-400">OUR LATEST ADVENTURES</h3>
-                      <p className="text-amber-100 mt-2">CHECK OUT SOME OF OUR RECENT CLIENT PROJECTS</p>
+                      <h3 className="text-xl font-bold text-amber-400">MY LATEST ADVENTURES</h3>
+                      <p className="text-amber-100 mt-2">CHECK OUT SOME OF MY RECENT PROJECTS</p>
                     </div>
 
                     <div className="grid gap-4">
                       <ProjectItem
-                        title="NEON ARCADE"
-                        type="E-COMMERCE"
-                        description="A RETRO-STYLED ONLINE STORE FOR A GAMING MERCHANDISE COMPANY"
-                        tech={["SHOPIFY", "CUSTOM THEME", "ANIMATION"]}
+                        title="PINTRAIL"
+                        type="ICP X FETCH.AI NEXTGEN AGENTS HACKATHON"
+                        description="PINTRAIL IS THE FIRST AI AGENT IN INDONESIA THAT HELPS YOU FIND THE BEST BOARDING HOUSE TO SUIT YOUR NEEDS. DISCOVER COMFORTABLE AND AFFORDABLE HOUSING WITH SMART AI-BASED RECOMMENDATIONS, ALONG WITH THE CONVENIENCE OF COMMUNICATING DIRECTLY WITH THE PROPERTY OWNER. PINTRAIL IS HERE TO TRANSFORM THE WAY YOU SEARCH FOR A PLACE TO LIVE."
+                        tech={["REACT JS", "NODE JS", "EXPRESS", "AGENTVERSE", "CANISTER", "ASI ONE", "ICP"]}
                         image="/placeholder.svg?height=100&width=160"
                       />
 
                       <ProjectItem
-                        title="BYTE BANK"
-                        type="FINTECH"
-                        description="MOBILE BANKING APP WITH 8-BIT INSPIRED INTERFACE AND GAMIFICATION"
-                        tech={["REACT NATIVE", "NODE.JS", "FIREBASE"]}
+                        title="HYCHAN"
+                        type="HYPERLIQUID NFT"
+                        description="AS THE LEAD SMART CONTRACT DEVELOPER, I BUILT AND DEPLOYED THE CORE CONTRACTS ON THE HYPEEVM NETWORK. I DEVELOPED THE SUPPORTING DAPP TO POWER WEB3 FUNCTIONALITIES — INCLUDING WALLET INTEGRATION, NFT MINTING, AND WALLET VERIFICATION. I SUCCESSFULLY SECURED THE END-TO-END MINTING PROCESS WITH THE DAPP AND SMART CONTRACT, EVEN UNDER HEAVY LOAD TRAFFIC."
+                        tech={["HYPEEVM", "REACT JS", "NEXT JS", "SUPABASE", "VERCEL", "EVM"]}
                         image="/placeholder.svg?height=100&width=160"
                       />
 
                       <ProjectItem
-                        title="PIXEL BREW"
-                        type="BRANDING"
-                        description="COMPLETE BRAND IDENTITY FOR A CRAFT BREWERY WITH GAMING THEMES"
-                        tech={["BRANDING", "PACKAGING", "WEB DESIGN"]}
+                        title="SINGLE PIN"
+                        type="HOMECREDIT INDONESIA"
+                        description={"I HAD THE OPPORTUNITY TO CONTRIBUTE TO THE DEVELOPMENT OF A WEB-BASED TRANSACTIONAL SINGLE PIN APP, DESIGNED FOR SEAMLESS FUNCTIONALITY ON MOBILE WEB VIEWS. MY INVOLVEMENT IN THIS PROJECT UNDERSCORED MY COMMITMENT TO EXCELLENCE AND MY ABILITY TO THRIVE IN COMPLEX WEB APPLICATION DEVELOPMENT."}
+                        tech={["REACT JS", "HTML", "SCSS", "TYPESCRIPT", "JAVASCRIPT", "REDUX"]}
                         image="/placeholder.svg?height=100&width=160"
                       />
-                    </div>
 
-                    <div className="text-center mt-6">
-                      <Link href="#" className="game-button inline-block bg-stone-700 hover:bg-stone-600">
-                        VIEW ALL PROJECTS
-                      </Link>
+                      <ProjectItem
+                        title="PAYLATER ONLINE"
+                        type="HOMECREDIT INDONESIA"
+                        description={"I HAD THE PRIVILEGE OF MAKING SIGNIFICANT CONTRIBUTIONS TO THE CREATION OF PAYLATER ONLINE, A WEB-BASED CROSS-PLATFORM APPLICATION. THIS ENDEAVOR LEVERAGED THE POWER OF REACT JS AND FOLLOWED THE AGILE METHODOLOGY AS THE SOFTWARE DEVELOPMENT LIFE CYCLE (SDLC) MODEL. THROUGH MY EFFORTS, I PLAYED A CRUCIAL ROLE IN THE SUCCESS OF THIS INNOVATIVE PROJECT."}
+                        tech={["REACT JS", "HTML", "SCSS", "TYPESCRIPT", "JAVASCRIPT", "REDUX"]}
+                        image="/placeholder.svg?height=100&width=160"
+                      />
+
+                      <ProjectItem
+                        title="GLOBAL MOBILE APP (GMA)"
+                        type="HOMECREDIT INDONESIA"
+                        description="AS A FLUTTER DEVELOPER, I WORKED ON THE GLOBAL MOBILE APP (GMA), A MULTI-COUNTRY MOBILE APPLICATION BUILT USING DOMAIN-DRIVEN DESIGN (DDD) PRINCIPLES. MY PRIMARY FOCUS WAS ON THE INDONESIA APP, ENSURING THE APP ALIGNED WITH LOCAL USER BEHAVIOR, UI/UX STANDARDS, AND COMPLIANCE REQUIREMENTS."
+                        tech={["FLUTTER", "GETX", "FIREBASE", "HIVE", "DART"]}
+                        image="/placeholder.svg?height=100&width=160"
+                      />
+
+                      <ProjectItem
+                        title="ASSEMBLY WEB"
+                        type="INDOMARCO PRISMATAMA"
+                        description="I HAD THE PRIVILEGE OF OVERSEEING THE CONTINUOUS MAINTENANCE AND OPTIMIZATION OF A LIVE SPARE PART WAREHOUSE WEB APPLICATION, BUILT UPON THE ROBUST FOUNDATION OF ASP .NET MVC AND POWERED BY A POSTGRESQL DATABASE MANAGEMENT SYSTEM. THIS MULTIFACETED RESPONSIBILITY NECESSITATED PROFICIENCY IN VARIOUS APIS, INCLUDING KENDO UI, ENTITY FRAMEWORK, ASP.NET IDENTITY, AND ADO .NET FOR POSTGRESQL."
+                        tech={["ASP.NET", "KENDO UI", "JAVASCRIPT", "ASP .NET MVC", "HTML", "CSS", "MYSQL"]}
+                        image="/placeholder.svg?height=100&width=160"
+                      />
+
+                      <ProjectItem
+                        title="YUMMY POS APP"
+                        type="INDOMARCO PRISMATAMA"
+                        description="I HAD THE PRIVILEGE OF CREATING THE SUCCESSFUL DEVELOPMENT OF A POINT OF SALE (POS) SYSTEM, INTRICATELY LINKED TO A PRODUCTION WAREHOUSE PROGRAM THROUGH A WEB API FOR SEAMLESS DATA EXCHANGE. THIS COMPLEX INTEGRATION LEVERAGED SEVERAL CRITICAL APIS, INCLUDING ENTITY FRAMEWORK AND ADO .NET FOR MYSQL."
+                        tech={["ADO.NET", "C#", ".NET", "MYSQL"]}
+                        image="/placeholder.svg?height=100&width=160"
+                      />
+
+                      <ProjectItem
+                        title="YUMMY WAREHOUSE WEB"
+                        type="INDOMARCO PRISMATAMA"
+                        description="I HAD THE PRIVILEGE OF MAINTAINING THE LIVE WAREHOUSE WEB PROJECT LINKED TO A POS PROGRAM THROUGH A WEB API FOR SEAMLESS DATA EXCHANGE."
+                        tech={["ASP.NET", "KENDO UI", "JAVASCRIPT", "ASP .NET MVC", "HTML", "CSS", "MYSQL"]}
+                        image="/placeholder.svg?height=100&width=160"
+                      />
                     </div>
                   </div>
                 </GameWindow>
@@ -357,15 +433,6 @@ export default function Home() {
                       <div className="testimonial bg-stone-900 border-2 border-amber-800 p-4">
                         <div className="flex items-start gap-4">
                           <div className="flex-shrink-0">
-                            <div className="w-12 h-12 border-2 border-amber-700 overflow-hidden">
-                              <img
-                                src="/placeholder.svg?height=48&width=48"
-                                alt="Client"
-                                className="pixelated"
-                                width={48}
-                                height={48}
-                              />
-                            </div>
                           </div>
                           <div>
                             <div className="flex items-center gap-1 mb-2">
@@ -374,10 +441,10 @@ export default function Home() {
                               ))}
                             </div>
                             <p className="text-amber-100 mb-2">
-                              "WORKING WITH THIS DEVELOPER WAS AMAZING! THEY DELIVERED A PIXEL-PERFECT WEBSITE THAT
+                              "WORKING WITH FAKHRI WAS AMAZING! HE DELIVERED AN IDEAS AND APPLICATION THAT
                               EXCEEDED OUR EXPECTATIONS. THE ATTENTION TO DETAIL AND COMMUNICATION WAS OUTSTANDING."
                             </p>
-                            <div className="text-green-400 font-bold">SARAH JOHNSON, STARTUP FOUNDER</div>
+                            <div className="text-green-400 font-bold">ANDI, PRODUCT OWNER</div>
                           </div>
                         </div>
                       </div>
@@ -385,15 +452,6 @@ export default function Home() {
                       <div className="testimonial bg-stone-900 border-2 border-amber-800 p-4">
                         <div className="flex items-start gap-4">
                           <div className="flex-shrink-0">
-                            <div className="w-12 h-12 border-2 border-amber-700 overflow-hidden">
-                              <img
-                                src="/placeholder.svg?height=48&width=48"
-                                alt="Client"
-                                className="pixelated"
-                                width={48}
-                                height={48}
-                              />
-                            </div>
                           </div>
                           <div>
                             <div className="flex items-center gap-1 mb-2">
@@ -402,10 +460,10 @@ export default function Home() {
                               ))}
                             </div>
                             <p className="text-amber-100 mb-2">
-                              "INCREDIBLE WORK ON OUR E-COMMERCE PLATFORM! THE DEVELOPER UNDERSTOOD OUR VISION AND
+                              "INCREDIBLE WORK ON OUR PINTRAIL PROJECT! FAKHRI UNDERSTOOD OUR VISION AND
                               BROUGHT IT TO LIFE WITH CLEAN CODE AND GREAT PERFORMANCE. HIGHLY RECOMMENDED!"
                             </p>
-                            <div className="text-green-400 font-bold">MIKE CHEN, BUSINESS OWNER</div>
+                            <div className="text-green-400 font-bold">HASBIEL, GOLANG DEVELOPER</div>
                           </div>
                         </div>
                       </div>
@@ -414,75 +472,23 @@ export default function Home() {
                 </GameWindow>
 
                 {/* Contact Section */}
-                <GameWindow title="START A NEW QUEST" id="contact" className="mt-8">
+                <GameWindow title="START A NEW GAME" id="contact" className="mt-8">
                   <div className="p-4">
-                    <div className="grid md:grid-cols-2 gap-8">
-                      <div className="bg-stone-900 border-2 border-amber-800 p-4">
-                        <h3 className="text-xl font-bold mb-4 text-amber-400">LET'S BUILD SOMETHING TOGETHER</h3>
+                    <div className="bg-stone-900 border-2 border-amber-800 p-4 w-full">
+                        <h3 className="text-xl font-bold mb-4 text-amber-400">LET ME JOIN YOUR FORCES</h3>
                         <p className="mb-6 text-amber-100">
-                          READY TO START YOUR NEXT PROJECT? I'M AVAILABLE FOR FREELANCE WORK AND FULL-TIME
-                          OPPORTUNITIES. LET'S DISCUSS HOW I CAN HELP BRING YOUR IDEAS TO LIFE!
-                        </p>
-                        <form className="space-y-4">
-                          <div>
-                            <label htmlFor="name" className="block mb-2 font-bold text-amber-200">
-                              NAME
-                            </label>
-                            <input type="text" id="name" className="game-input w-full" placeholder="YOUR NAME" />
-                          </div>
-                          <div>
-                            <label htmlFor="email" className="block mb-2 font-bold text-amber-200">
-                              EMAIL
-                            </label>
-                            <input type="email" id="email" className="game-input w-full" placeholder="YOUR EMAIL" />
-                          </div>
-                          <div>
-                            <label htmlFor="project" className="block mb-2 font-bold text-amber-200">
-                              PROJECT TYPE
-                            </label>
-                            <select id="project" className="game-input w-full">
-                              <option value="">SELECT PROJECT TYPE</option>
-                              <option value="web">WEBSITE</option>
-                              <option value="app">MOBILE APP</option>
-                              <option value="ecommerce">E-COMMERCE</option>
-                              <option value="branding">BRANDING</option>
-                              <option value="marketing">MARKETING</option>
-                            </select>
-                          </div>
-                          <div>
-                            <label htmlFor="message" className="block mb-2 font-bold text-amber-200">
-                              MESSAGE
-                            </label>
-                            <textarea
-                              id="message"
-                              rows={4}
-                              className="game-input w-full"
-                              placeholder="TELL US ABOUT YOUR PROJECT"
-                            ></textarea>
-                          </div>
-                          <div>
-                            <button type="submit" className="game-button bg-red-700 hover:bg-red-600">
-                              SEND MESSAGE
-                            </button>
-                          </div>
-                        </form>
-                      </div>
-
-                      <div className="bg-stone-900 border-2 border-amber-800 p-4">
-                        <h3 className="text-xl font-bold mb-4 text-amber-400">JOIN FORCES WITH US</h3>
-                        <p className="mb-6 text-amber-100">
-                          READY TO EMBARK ON A DIGITAL ADVENTURE? OUR TEAM IS EQUIPPED TO BRING YOUR VISION TO LIFE WITH
+                          I'M EQUIPPED TO BRING YOUR VISION TO LIFE WITH
                           OUR UNIQUE BLEND OF RETRO AESTHETICS AND MODERN TECHNOLOGY.
                         </p>
 
                         <div className="stats-container border-2 border-amber-800 p-3 bg-stone-800 mb-6">
                           <div className="flex justify-between mb-2">
                             <span>EMAIL:</span>
-                            <span className="text-green-400">DEV@QUEST.COM</span>
+                            <span className="text-green-400">FAKHRIPRAYA@GMAIL.COM</span>
                           </div>
                           <div className="flex justify-between mb-2">
                             <span>LOCATION:</span>
-                            <span>REMOTE / WORLDWIDE</span>
+                            <span>REMOTE / INDONESIA</span>
                           </div>
                           <div className="flex justify-between">
                             <span>STATUS:</span>
@@ -493,14 +499,13 @@ export default function Home() {
                         <h4 className="font-bold mb-2 text-amber-200">FOLLOW MY CODING JOURNEY:</h4>
                         <SocialLinks />
                       </div>
-                    </div>
                   </div>
                 </GameWindow>
 
                 {/* Footer */}
                 <footer className="mt-8 text-center p-4 border-t-2 border-amber-800">
-                  <p className="text-amber-400">© 2025 DEV.QUEST - CRAFTING CODE, ONE PIXEL AT A TIME</p>
-                  <div className="mt-2 text-xs text-amber-200">READY FOR YOUR NEXT ADVENTURE?</div>
+                  <p className="text-amber-400">© 2025 DEV.QUEST BY FAKHRI - CRAFTING CODE, ONE PIXEL AT A TIME</p>
+                  <div className="mt-2 text-xs text-amber-200">I'M READY FOR MY NEXT ADVENTURE!</div>
                 </footer>
               </div>
 
