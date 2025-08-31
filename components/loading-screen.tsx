@@ -93,7 +93,7 @@ export default function LoadingScreen({ isComplete, onStart }: LoadingScreenProp
             </h1>
             <Gamepad2 className="h-8 w-8 text-red-500" />
           </div>
-          <p className="text-amber-200 pixel-text-xs md:pixel-text-sm">FULL-STACK DEVELOPER PORTFOLIO</p>
+          <p className="text-amber-200 pixel-text-xs md:pixel-text-sm">WELCOME TO MY REALM</p>
         </div>
 
         {/* Loading Bar Container */}
