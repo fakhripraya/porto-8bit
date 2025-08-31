@@ -65,6 +65,15 @@
 
   .game-window {
     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.3);
+    animation: slideInFromBottom 0.6s ease-out;
+  }
+
+  .game-window:nth-child(even) {
+    animation: slideInFromLeft 0.6s ease-out;
+  }
+
+  .game-window:nth-child(odd) {
+    animation: slideInFromRight 0.6s ease-out;
   }
 
   .game-button {
@@ -85,11 +94,57 @@
 
   .menu-item {
     @apply inline-block px-3 py-1 bg-stone-800 border-2 border-amber-800 text-amber-400 text-xs font-bold hover:bg-stone-700;
-    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: all 0.2s ease;
+    overflow: hidden;
+  }
+
+  .menu-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 4px 0 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .menu-item:active {
+    transform: translateY(1px);
+    box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .menu-item-active {
+    animation: menuItemPulse 0.3s ease-in-out;
+    background-color: #dc2626 !important;
+    border-color: #991b1b !important;
+    transform: scale(1.05);
+  }
+
+  .menu-loading {
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 2px;
+  }
+
+  .loading-dot {
+    width: 3px;
+    height: 3px;
+    background-color: #fbbf24;
+    border-radius: 50%;
+    animation: loadingDots 0.6s infinite;
+  }
+
+  .loading-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .loading-dot:nth-child(3) {
+    animation-delay: 0.4s;
   }
 
   .menu-item.special {
     @apply bg-red-800 text-white border-red-700 hover:bg-red-700;
+    animation: glitchEffect 0.3s ease-in-out;
   }
 
   .tech-tag {
@@ -119,6 +174,198 @@
     }
     100% {
       opacity: 0.1;
+    }
+  }
+
+  @keyframes menuItemPulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 0 8px rgba(220, 38, 38, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(220, 38, 38, 0);
+    }
+  }
+
+  @keyframes loadingDots {
+    0%,
+    80%,
+    100% {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+    40% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInFromBottom {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInFromLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes glitchEffect {
+    0% {
+      transform: translateY(-2px);
+    }
+    10% {
+      transform: translateY(-2px) skewX(-2deg);
+    }
+    20% {
+      transform: translateY(-2px) skewX(2deg);
+    }
+    30% {
+      transform: translateY(-2px) skewX(-1deg);
+    }
+    40% {
+      transform: translateY(-2px) skewX(1deg);
+    }
+    50% {
+      transform: translateY(-2px) skewX(0deg);
+    }
+    100% {
+      transform: translateY(-2px);
+    }
+  }
+
+  /* Add pixel-perfect scroll indicator */
+  .scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #dc2626, #fbbf24, #22c55e);
+    z-index: 1000;
+    transition: width 0.1s ease;
+  }
+
+  /* Sound effect animations */
+  .sound-effect {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: #fbbf24;
+    pointer-events: none;
+    z-index: 9999;
+    animation: soundBurst 0.5s ease-out forwards;
+  }
+
+  .sound-effect-click {
+    color: #dc2626;
+  }
+
+  .sound-effect-hover {
+    color: #22c55e;
+  }
+
+  .sound-effect-success {
+    color: #3b82f6;
+  }
+
+  .playing-sound {
+    animation: soundPulse 0.2s ease-in-out;
+  }
+
+  @keyframes soundBurst {
+    0% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(2) translateY(-20px);
+    }
+  }
+
+  @keyframes soundPulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.02);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  /* Add particle effects for menu clicks */
+  .menu-item::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle, #fbbf24 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .menu-item-active::before {
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+    animation: particleBurst 0.3s ease-out;
+  }
+
+  @keyframes particleBurst {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 0.8;
+    }
+    50% {
+      width: 80px;
+      height: 80px;
+      opacity: 0.4;
+    }
+    100% {
+      width: 120px;
+      height: 120px;
+      opacity: 0;
     }
   }
 }

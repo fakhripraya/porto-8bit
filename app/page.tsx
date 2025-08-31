@@ -10,6 +10,7 @@ import SkillMeter from "@/components/skill-meter"
 import SocialLinks from "@/components/social-links"
 import LoadingScreen from "@/components/loading-screen"
 import ServiceCard from "@/components/service-card"
+import ScrollIndicator from "@/components/scroll-indicator"
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
@@ -38,6 +39,9 @@ export default function Home() {
 
   return (
     <>
+      {/* Scroll Indicator */}
+      <ScrollIndicator />
+
       {/* Loading Screen */}
       {!showContent && <LoadingScreen isComplete={!isLoading} onStart={() => setShowContent(true)} />}
 
@@ -363,7 +367,7 @@ export default function Home() {
                         title="PINTRAIL"
                         type="ICP X FETCH.AI NEXTGEN AGENTS HACKATHON"
                         description="PINTRAIL IS THE FIRST AI AGENT IN INDONESIA THAT HELPS YOU FIND THE BEST BOARDING HOUSE TO SUIT YOUR NEEDS. DISCOVER COMFORTABLE AND AFFORDABLE HOUSING WITH SMART AI-BASED RECOMMENDATIONS, ALONG WITH THE CONVENIENCE OF COMMUNICATING DIRECTLY WITH THE PROPERTY OWNER. PINTRAIL IS HERE TO TRANSFORM THE WAY YOU SEARCH FOR A PLACE TO LIVE."
-                        tech={["REACT JS", "NODE JS", "EXPRESS", "AGENTVERSE", "CANISTER", "ASI ONE", "ICP"]}
+                        tech={["PYTHON", "REACT JS", "NODE JS", "EXPRESS", "AGENTVERSE", "CANISTER", "ASI ONE", "ICP"]}
                         image="/placeholder.svg?height=100&width=160"
                       />
 
