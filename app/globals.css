@@ -42,7 +42,73 @@
   .font-pixel {
     font-family: "Press Start 2P", system-ui, sans-serif;
     letter-spacing: 0.05em;
+    line-height: 1.6;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Responsive pixel text sizes */
+  .pixel-text-xs {
+    font-size: 0.5rem;
+    line-height: 1.4;
+  }
+
+  .pixel-text-sm {
+    font-size: 0.625rem;
     line-height: 1.5;
+  }
+
+  .pixel-text-base {
+    font-size: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .pixel-text-lg {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  .pixel-text-xl {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .pixel-text-2xl {
+    font-size: 1.25rem;
+    line-height: 1.6;
+  }
+
+  @media (min-width: 640px) {
+    .pixel-text-sm {
+      font-size: 0.75rem;
+    }
+    .pixel-text-base {
+      font-size: 0.875rem;
+    }
+    .pixel-text-lg {
+      font-size: 1rem;
+    }
+    .pixel-text-xl {
+      font-size: 1.25rem;
+    }
+    .pixel-text-2xl {
+      font-size: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .pixel-text-base {
+      font-size: 1rem;
+    }
+    .pixel-text-lg {
+      font-size: 1.125rem;
+    }
+    .pixel-text-xl {
+      font-size: 1.5rem;
+    }
+    .pixel-text-2xl {
+      font-size: 1.875rem;
+    }
   }
 
   .pixel-text {
@@ -50,7 +116,13 @@
   }
 
   .console-frame {
-    box-shadow: 0 0 0 4px #000, 0 0 0 8px #78350f, 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0 2px #000, 0 0 0 4px #78350f, 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (min-width: 640px) {
+    .console-frame {
+      box-shadow: 0 0 0 4px #000, 0 0 0 8px #78350f, 0 0 20px rgba(0, 0, 0, 0.5);
+    }
   }
 
   .console-button {
@@ -77,9 +149,20 @@
   }
 
   .game-button {
-    @apply px-4 py-2 border-2 border-stone-600 font-bold text-white;
+    @apply px-2 py-1 border-2 border-stone-600 font-bold text-white;
+    font-size: 0.625rem;
+    line-height: 1.4;
     box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.5), inset 2px 2px 0 0 rgba(255, 255, 255, 0.1);
     transition: transform 0.1s, box-shadow 0.1s;
+    word-break: keep-all;
+    text-align: center;
+  }
+
+  @media (min-width: 640px) {
+    .game-button {
+      @apply px-4 py-2;
+      font-size: 0.75rem;
+    }
   }
 
   .game-button:active {
@@ -88,16 +171,41 @@
   }
 
   .game-input {
-    @apply bg-stone-800 border-2 border-amber-800 p-2 text-amber-100 font-pixel text-xs;
+    @apply bg-stone-800 border-2 border-amber-800 p-2 text-amber-100 font-pixel;
+    font-size: 0.625rem;
+    line-height: 1.4;
     box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
   }
 
+  @media (min-width: 640px) {
+    .game-input {
+      font-size: 0.75rem;
+    }
+  }
+
   .menu-item {
-    @apply inline-block px-3 py-1 bg-stone-800 border-2 border-amber-800 text-amber-400 text-xs font-bold hover:bg-stone-700;
+    @apply inline-block px-2 py-1 bg-stone-800 border-2 border-amber-800 text-amber-400 font-bold hover:bg-stone-700;
+    font-size: 0.5rem;
+    line-height: 1.4;
     box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.3);
     position: relative;
     transition: all 0.2s ease;
     overflow: hidden;
+    word-break: keep-all;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 640px) {
+    .menu-item {
+      @apply px-3;
+      font-size: 0.625rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .menu-item {
+      font-size: 0.75rem;
+    }
   }
 
   .menu-item:hover {
@@ -148,7 +256,17 @@
   }
 
   .tech-tag {
-    @apply inline-block px-2 py-0.5 bg-stone-800 text-xs text-amber-400 border border-amber-700;
+    @apply inline-block px-1 py-0.5 bg-stone-800 text-amber-400 border border-amber-700;
+    font-size: 0.5rem;
+    line-height: 1.2;
+    word-break: keep-all;
+  }
+
+  @media (min-width: 640px) {
+    .tech-tag {
+      @apply px-2;
+      font-size: 0.625rem;
+    }
   }
 
   .view-project-link {
@@ -366,6 +484,18 @@
       width: 120px;
       height: 120px;
       opacity: 0;
+    }
+  }
+
+  /* Responsive container adjustments */
+  .stats-container {
+    font-size: 0.625rem;
+    line-height: 1.4;
+  }
+
+  @media (min-width: 640px) {
+    .stats-container {
+      font-size: 0.75rem;
     }
   }
 }

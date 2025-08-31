@@ -49,15 +49,15 @@ export default function Home() {
       {showContent && (
         <div className="min-h-screen bg-amber-950 text-white font-pixel">
           {/* Game Console Frame */}
-          <div className="max-w-6xl mx-auto p-4 md:p-8">
-            <div className="console-frame bg-red-900 p-2 md:p-4 rounded-lg border-8 border-stone-800">
-              <div className="console-screen bg-stone-800 p-4 rounded-md">
+          <div className="max-w-6xl mx-auto p-2 md:p-4 lg:p-8">
+            <div className="console-frame bg-red-900 p-1 md:p-2 lg:p-4 rounded-lg border-4 md:border-8 border-stone-800">
+              <div className="console-screen bg-stone-800 p-2 md:p-4 rounded-md">
                 {/* Header/Navigation */}
                 <header className="mb-8">
                   <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                     <div className="flex items-center gap-2">
                       <div className="w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
-                      <h1 className="text-xl md:text-2xl font-bold text-amber-400 pixel-text">DEV.QUEST</h1>
+                      <h1 className="pixel-text-lg md:pixel-text-2xl font-bold text-amber-400 pixel-text">DEV.QUEST</h1>
                     </div>
                     <GameMenu isAgency={true} />
                   </div>
@@ -67,10 +67,10 @@ export default function Home() {
                 <GameWindow title="DIGITAL REALM HEADQUARTERS">
                   <div className="grid md:grid-cols-2 gap-8 items-center p-4">
                     <div>
-                      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-amber-400 pixel-text">
+                      <h2 className="pixel-text-xl md:pixel-text-2xl font-bold mb-4 text-amber-400 pixel-text">
                         Hi,I'm Fakhri
                       </h2>
-                      <p className="mb-6 leading-relaxed text-amber-100">
+                      <p className="mb-6 leading-relaxed text-amber-100 pixel-text-sm md:pixel-text-base">
                         I'M A <span className="text-red-400">FULL-STACK DEVELOPER</span> ON AN EPIC QUEST TO CREATE
                         <span className="text-green-400"> LEGENDARY</span> DIGITAL EXPERIENCES.
                       </p>
@@ -134,8 +134,8 @@ export default function Home() {
                 <GameWindow title="MY SKILLS & ABILITIES" id="services" className="mt-8">
                   <div className="p-4">
                     <div className="text-center mb-6">
-                      <h3 className="text-xl font-bold text-amber-400">CHOOSE YOUR ADVENTURE</h3>
-                      <p className="text-amber-100 mt-2">
+                      <h3 className="pixel-text-lg md:pixel-text-xl font-bold text-amber-400">MY ADVENTURE</h3>
+                      <p className="text-amber-100 mt-2 pixel-text-xs md:pixel-text-sm">
                         HERE ARE THE TECHNICAL SKILLS I'VE MASTERED ON MY CODING JOURNEY
                       </p>
                     </div>
@@ -190,45 +190,45 @@ export default function Home() {
                 <GameWindow title="MY STATS" id="about" className="mt-8">
                   <div className="grid md:grid-cols-2 gap-8 p-4">
                     <div className="bg-stone-900 border-2 border-amber-800 p-4">
-                      <h3 className="text-xl font-bold mb-4 text-red-400 flex items-center gap-2">
+                       <h3 className="pixel-text-lg md:pixel-text-xl font-bold mb-4 text-red-400 flex items-center gap-2">
                         <Scroll className="h-5 w-5" />
-                        OUR STORY
+                        THE STORY
                       </h3>
-                      <p className="mb-4 text-amber-100">
+                      <p className="mb-4 text-amber-100 pixel-text-sm md:pixel-text-base">
                         I BEGAN MY CODING ADVENTURE IN 2016 WITH A SIMPLE "HELLO WORLD" AND HAVEN'T STOPPED EXPLORING
                         SINCE. MY JOURNEY HAS TAKEN ME THROUGH VARIOUS TECHNOLOGIES AND FRAMEWORKS.
                       </p>
-                      <p className="text-amber-100">
+                      <p className="text-amber-100 pixel-text-sm md:pixel-text-base">
                         MY QUEST IS TO BUILD DIGITAL EXPERIENCES THAT SOLVE REAL PROBLEMS AND DELIGHT USERS WITH CLEAN
                         CODE AND THOUGHTFUL DESIGN.
                       </p>
 
-                      <h3 className="text-xl font-bold mt-6 mb-4 text-red-400 flex items-center gap-2">
+                      <h3 className="pixel-text-lg md:pixel-text-xl font-bold mt-6 mb-4 text-red-400 flex items-center gap-2">
                         <Trophy className="h-5 w-5" />
                         ACHIEVEMENTS
                       </h3>
                       <ul className="space-y-2">
                         <li className="flex items-center gap-2">
                           <Star className="h-4 w-4 text-amber-400" />
-                          <span>SUCCESSSFULLY BUILD A FULLY FUNCTION SINGLE PIN PAYMENT APP</span>
+                          <span className="pixel-text-sm md:pixel-text-base">SUCCESSSFULLY BUILD A FULLY FUNCTION SINGLE PIN PAYMENT APP</span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Star className="h-4 w-4 text-amber-400" />
-                          <span>SUCCESSFULL TRANSITION TO GLOBAL MOBILE APP FROM LOCAL MOBILE APP WITH FLUTTER</span>
+                          <span className="pixel-text-sm md:pixel-text-base">SUCCESSFULL TRANSITION TO GLOBAL MOBILE APP FROM LOCAL MOBILE APP WITH FLUTTER</span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Star className="h-4 w-4 text-amber-400" />
-                          <span>SUCCESSSFULLY BUILD A FULLY FUNCTIONAL WEB3 DAPP AND EVM SMART CONTRACT WITH ERC-721</span>
+                          <span className="pixel-text-sm md:pixel-text-base">SUCCESSSFULLY BUILD A FULLY FUNCTIONAL WEB3 DAPP AND EVM SMART CONTRACT WITH ERC-721</span>
                         </li>
                         <li className="flex items-center gap-2">
                           <Star className="h-4 w-4 text-amber-400" />
-                          <span>SUCCESSSFULLY BUILD AN AI BOARDING HOUSE FINDER PROJECT AT ICP x FET - NEXTGEN AGENTS HACKATHON IN JUST 1 WEEK</span>
+                          <span className="pixel-text-sm md:pixel-text-base">SUCCESSSFULLY BUILD AN AI BOARDING HOUSE FINDER PROJECT AT ICP x FET - NEXTGEN AGENTS HACKATHON IN JUST 1 WEEK</span>
                         </li>
                       </ul>
                     </div>
 
                     <div className="bg-stone-900 border-2 border-amber-800 p-4">
-                      <h3 className="text-xl font-bold mb-4 text-green-400 flex items-center gap-2">
+                      <h3 className="pixel-text-lg md:pixel-text-xl font-bold mb-4 text-green-400 flex items-center gap-2">
                         <Sword className="h-5 w-5" />
                         OUR EXPERTISE
                       </h3>
@@ -248,11 +248,11 @@ export default function Home() {
                 <GameWindow title="MY CODING JOURNEY" id="experience" className="mt-8">
                   <div className="p-4">
                     <div className="text-center mb-6">
-                      <h3 className="text-xl font-bold text-amber-400 flex items-center justify-center gap-2">
+                      <h3 className="pixel-text-lg md:pixel-text-xl font-bold text-amber-400 flex items-center justify-center gap-2">
                         <Scroll className="h-5 w-5" />
                         EXPERIENCE LOG
                       </h3>
-                      <p className="text-amber-100 mt-2">MY ADVENTURE THROUGH THE WORLD OF SOFTWARE DEVELOPMENT</p>
+                      <p className="text-amber-100 mt-2 pixel-text-xs md:pixel-text-sm">MY ADVENTURE THROUGH THE WORLD OF SOFTWARE DEVELOPMENT</p>
                     </div>
 
                     <div className="grid gap-4">
@@ -358,8 +358,8 @@ export default function Home() {
                 <GameWindow title="COMPLETED QUESTS" id="projects" className="mt-8">
                   <div className="p-4">
                     <div className="text-center mb-6">
-                      <h3 className="text-xl font-bold text-amber-400">MY LATEST ADVENTURES</h3>
-                      <p className="text-amber-100 mt-2">CHECK OUT SOME OF MY RECENT PROJECTS</p>
+                      <h3 className="pixel-text-lg md:pixel-text-xl font-bold text-amber-400">MY LATEST ADVENTURES</h3>
+                      <p className="text-amber-100 mt-2 pixel-text-xs md:pixel-text-sm">CHECK OUT SOME OF MY RECENT PROJECTS</p>
                     </div>
 
                     <div className="grid gap-4">
@@ -444,11 +444,11 @@ export default function Home() {
                                 <Star key={i} className="h-4 w-4 text-amber-400" />
                               ))}
                             </div>
-                            <p className="text-amber-100 mb-2">
+                            <p className="text-amber-100 mb-2 pixel-text-sm md:pixel-text-base">
                               "WORKING WITH FAKHRI WAS AMAZING! HE DELIVERED AN IDEAS AND APPLICATION THAT
                               EXCEEDED OUR EXPECTATIONS. THE ATTENTION TO DETAIL AND COMMUNICATION WAS OUTSTANDING."
                             </p>
-                            <div className="text-green-400 font-bold">ANDI, PRODUCT OWNER</div>
+                            <div className="text-green-400 font-bold pixel-text-sm md:pixel-text-base">ANDI, PRODUCT OWNER</div>
                           </div>
                         </div>
                       </div>
@@ -463,11 +463,11 @@ export default function Home() {
                                 <Star key={i} className="h-4 w-4 text-amber-400" />
                               ))}
                             </div>
-                            <p className="text-amber-100 mb-2">
+                            <p className="text-amber-100 mb-2 pixel-text-sm md:pixel-text-base">
                               "INCREDIBLE WORK ON OUR PINTRAIL PROJECT! FAKHRI UNDERSTOOD OUR VISION AND
                               BROUGHT IT TO LIFE WITH CLEAN CODE AND GREAT PERFORMANCE. HIGHLY RECOMMENDED!"
                             </p>
-                            <div className="text-green-400 font-bold">HASBIEL, GOLANG DEVELOPER</div>
+                            <div className="text-green-400 font-bold pixel-text-sm md:pixel-text-base">HASBIEL, GOLANG DEVELOPER</div>
                           </div>
                         </div>
                       </div>
@@ -479,8 +479,8 @@ export default function Home() {
                 <GameWindow title="START A NEW GAME" id="contact" className="mt-8">
                   <div className="p-4">
                     <div className="bg-stone-900 border-2 border-amber-800 p-4 w-full">
-                        <h3 className="text-xl font-bold mb-4 text-amber-400">LET ME JOIN YOUR FORCES</h3>
-                        <p className="mb-6 text-amber-100">
+                        <h3 className="pixel-text-lg md:pixel-text-xl font-bold mb-4 text-amber-400">LET US CONNECT!</h3>
+                        <p className="mb-6 text-amber-100 pixel-text-sm md:pixel-text-base">
                           I'M EQUIPPED TO BRING YOUR VISION TO LIFE WITH
                           OUR UNIQUE BLEND OF RETRO AESTHETICS AND MODERN TECHNOLOGY.
                         </p>
@@ -508,8 +508,8 @@ export default function Home() {
 
                 {/* Footer */}
                 <footer className="mt-8 text-center p-4 border-t-2 border-amber-800">
-                  <p className="text-amber-400">© 2025 DEV.QUEST BY FAKHRI - CRAFTING CODE, ONE PIXEL AT A TIME</p>
-                  <div className="mt-2 text-xs text-amber-200">I'M READY FOR MY NEXT ADVENTURE!</div>
+                  <p className="text-amber-400 pixel-text-sm md:pixel-text-base">© 2025 DEV.QUEST BY FAKHRI - CRAFTING CODE, ONE PIXEL AT A TIME</p>
+                  <div className="mt-2 text-xs text-amber-200 pixel-text-sm md:pixel-text-base">I'M READY FOR MY NEXT ADVENTURE!</div>
                 </footer>
               </div>
 

@@ -37,7 +37,7 @@ export default function GameMenu({ isAgency = false }: GameMenuProps) {
 
   return (
     <nav className="game-menu">
-      <ul className="flex flex-wrap justify-center md:justify-end gap-2 md:gap-4">
+      <ul className="flex flex-wrap justify-center md:justify-end gap-1 md:gap-2 lg:gap-4">
         {menuItems.map((item) => (
           <li key={item.href}>
             <button
@@ -46,7 +46,20 @@ export default function GameMenu({ isAgency = false }: GameMenuProps) {
                 activeItem === item.href ? "menu-item-active" : ""
               }`}
             >
-              {item.label}
+              <span className="hidden sm:inline">{item.label}</span>
+              <span className="sm:hidden">
+                {item.label === "SKILLS"
+                  ? "SKILL"
+                  : item.label === "ABOUT"
+                    ? "INFO"
+                    : item.label === "EXPERIENCE"
+                      ? "EXP"
+                      : item.label === "PROJECTS"
+                        ? "WORK"
+                        : item.label === "HIRE ME"
+                          ? "HIRE"
+                          : item.label}
+              </span>
               {activeItem === item.href && (
                 <span className="menu-loading">
                   <span className="loading-dot"></span>

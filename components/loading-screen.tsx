@@ -88,18 +88,20 @@ export default function LoadingScreen({ isComplete, onStart }: LoadingScreenProp
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center gap-3 mb-2">
             <Gamepad2 className="h-8 w-8 text-red-500" />
-            <h1 className="text-2xl md:text-3xl font-bold text-amber-400 pixel-text">PORTOFOLIO</h1>
+            <h1 className="pixel-text-xl md:pixel-text-2xl lg:text-3xl font-bold text-amber-400 pixel-text">
+              DEV.QUEST
+            </h1>
             <Gamepad2 className="h-8 w-8 text-red-500" />
           </div>
-          <p className="text-amber-200">LOADING PLEASE WAIT</p>
+          <p className="text-amber-200 pixel-text-xs md:pixel-text-sm">FULL-STACK DEVELOPER PORTFOLIO</p>
         </div>
 
         {/* Loading Bar Container */}
         <div className="loading-container border-4 border-amber-800 p-4 bg-stone-800 mb-6">
           {/* Status Text */}
           <div className="flex justify-between items-center mb-2">
-            <span className="text-amber-400">{loadingText}</span>
-            <span className="text-amber-400">{progress}%</span>
+            <span className="text-amber-400 pixel-text-xs md:pixel-text-sm">{loadingText}</span>
+            <span className="text-amber-400 pixel-text-xs md:pixel-text-sm">{progress}%</span>
           </div>
 
           {/* Progress Bar */}
@@ -136,10 +138,10 @@ export default function LoadingScreen({ isComplete, onStart }: LoadingScreenProp
         <div className="game-tip border-2 border-amber-800 p-3 bg-stone-900 text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-1">
             <Zap className="h-4 w-4 text-amber-400" />
-            <span className="text-amber-400 text-sm font-bold">DEVELOPER TIP</span>
+            <span className="text-amber-400 pixel-text-xs md:pixel-text-sm font-bold">DEVELOPER TIP</span>
             <Zap className="h-4 w-4 text-amber-400" />
           </div>
-          <p className="text-amber-200 text-sm">{currentTip}</p>
+          <p className="text-amber-200 pixel-text-xs md:pixel-text-sm">{currentTip}</p>
         </div>
 
         {/* Press Start Button */}

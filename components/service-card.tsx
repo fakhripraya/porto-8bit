@@ -39,10 +39,12 @@ export default function ServiceCard({ title, description, icon, color }: Service
   }
 
   return (
-    <div className={`service-card border-2 ${getColorClass()} p-4 hover:translate-y-[-4px] transition-transform`}>
-      <div className={`service-icon mb-4 ${getIconColorClass()}`}>{icon}</div>
-      <h3 className="text-lg font-bold mb-2 text-amber-400">{title}</h3>
-      <p className="text-sm text-amber-100">{description}</p>
+    <div
+      className={`service-card border-2 ${getColorClass()} p-2 md:p-4 hover:translate-y-[-4px] transition-transform`}
+    >
+      <div className={`service-icon mb-2 md:mb-4 ${getIconColorClass()}`}>{icon}</div>
+      <h3 className="pixel-text-sm md:pixel-text-lg font-bold mb-2 text-amber-400">{title}</h3>
+      <p className="pixel-text-xs md:pixel-text-sm text-amber-100">{description}</p>
     </div>
   )
 }
