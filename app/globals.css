@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+  font-display: swap;
+}
+
+:root {
+  --background: 24 29% 15%;
+  --foreground: 0 0% 98%;
+  --card: 24 29% 15%;
+  --card-foreground: 0 0% 98%;
+  --popover: 24 29% 15%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 0 84% 60%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 38 92% 50%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 12 6% 15%;
+  --muted-foreground: 24 5% 64%;
+  --accent: 12 6% 15%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 38 50% 30%;
+  --input: 12 6% 15%;
+  --ring: 24 5% 64%;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    image-rendering: pixelated;
+  }
+}
+
+@layer components {
+  .font-pixel {
+    font-family: "Press Start 2P", system-ui, sans-serif;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+  }
+
+  .pixel-text {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.7);
+  }
+
+  .console-frame {
+    box-shadow: 0 0 0 4px #000, 0 0 0 8px #78350f, 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .console-button {
+    @apply w-8 h-8 rounded-full bg-stone-800 border-2 border-stone-700 text-amber-400 font-bold flex items-center justify-center;
+    box-shadow: 0 2px 0 0 #000;
+  }
+
+  .console-button:active {
+    @apply translate-y-0.5;
+    box-shadow: 0 0 0 0 #000;
+  }
+
+  .game-window {
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .game-button {
+    @apply px-4 py-2 border-2 border-stone-600 font-bold text-white;
+    box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.5), inset 2px 2px 0 0 rgba(255, 255, 255, 0.1);
+    transition: transform 0.1s, box-shadow 0.1s;
+  }
+
+  .game-button:active {
+    @apply translate-y-1;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.5), inset 2px 2px 0 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .game-input {
+    @apply bg-stone-800 border-2 border-amber-800 p-2 text-amber-100 font-pixel text-xs;
+    box-shadow: inset 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .menu-item {
+    @apply inline-block px-3 py-1 bg-stone-800 border-2 border-amber-800 text-amber-400 text-xs font-bold hover:bg-stone-700;
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.5);
+  }
+
+  .menu-item.special {
+    @apply bg-red-800 text-white border-red-700 hover:bg-red-700;
+  }
+
+  .tech-tag {
+    @apply inline-block px-2 py-0.5 bg-stone-800 text-xs text-amber-400 border border-amber-700;
+  }
+
+  .view-project-link {
+    @apply text-xs text-green-400 hover:text-green-300 inline-flex items-center;
+  }
+
+  .social-link {
+    @apply w-10 h-10 flex items-center justify-center bg-stone-800 border-2 border-amber-700 text-amber-400 hover:bg-stone-700 hover:text-amber-300;
+    box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .pixelated {
+    image-rendering: pixelated;
+  }
+
+  /* Loading animation */
+  @keyframes loadingPulse {
+    0% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+}
