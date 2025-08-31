@@ -230,7 +230,7 @@ export default function Home() {
                     <div className="bg-stone-900 border-2 border-amber-800 p-4">
                       <h3 className="pixel-text-lg md:pixel-text-xl font-bold mb-4 text-green-400 flex items-center gap-2">
                         <Sword className="h-5 w-5" />
-                        OUR EXPERTISE
+                        MY EXPERTISE
                       </h3>
                       <div className="space-y-4">
                         <SkillMeter name="REACT WEB DEVELOPMENT" level={95} color="red" />
@@ -482,7 +482,7 @@ export default function Home() {
                         <h3 className="pixel-text-lg md:pixel-text-xl font-bold mb-4 text-amber-400">LET US CONNECT!</h3>
                         <p className="mb-6 text-amber-100 pixel-text-sm md:pixel-text-base">
                           I'M EQUIPPED TO BRING YOUR VISION TO LIFE WITH
-                          OUR UNIQUE BLEND OF RETRO AESTHETICS AND MODERN TECHNOLOGY.
+                          MY UNIQUE BLEND OF AESTHETICS AND MODERN TECHNOLOGY.
                         </p>
 
                         <div className="stats-container border-2 border-amber-800 p-3 bg-stone-800 mb-6">
