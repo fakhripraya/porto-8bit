@@ -57,7 +57,7 @@ export default function Home() {
                   <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                     <div className="flex items-center gap-2">
                       <div className="w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
-                      <h1 className="pixel-text-lg md:pixel-text-2xl font-bold text-amber-400 pixel-text">DEV.QUEST</h1>
+                      <h1 className="pixel-text-lg md:pixel-text-2xl font-bold text-amber-400 pixel-text">PORTOFOLIO</h1>
                     </div>
                     <GameMenu isAgency={true} />
                   </div>

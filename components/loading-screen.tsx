@@ -89,7 +89,7 @@ export default function LoadingScreen({ isComplete, onStart }: LoadingScreenProp
           <div className="inline-flex items-center justify-center gap-3 mb-2">
             <Gamepad2 className="h-8 w-8 text-red-500" />
             <h1 className="pixel-text-xl md:pixel-text-2xl lg:text-3xl font-bold text-amber-400 pixel-text">
-              DEV.QUEST
+              PORTOFOLIO
             </h1>
             <Gamepad2 className="h-8 w-8 text-red-500" />
           </div>
