@@ -57,7 +57,7 @@ export default function Home() {
                   <div className="flex flex-col md:flex-row justify-between items-center gap-4">
                     <div className="flex items-center gap-2">
                       <div className="w-6 h-6 bg-red-500 rounded-full animate-pulse"></div>
-                      <h1 className="pixel-text-lg md:pixel-text-2xl font-bold text-amber-400 pixel-text">PORTOFOLIO</h1>
+                      <h1 className="pixel-text-lg md:pixel-text-2xl font-bold text-amber-400 pixel-text">DEV PORTO</h1>
                     </div>
                     <GameMenu isAgency={true} />
                   </div>
@@ -71,7 +71,7 @@ export default function Home() {
                         Hi,I'm Fakhri
                       </h2>
                       <p className="mb-6 leading-relaxed text-amber-100 pixel-text-sm md:pixel-text-base">
-                        I'M A <span className="text-red-400">FULL-STACK DEVELOPER</span> ON AN EPIC QUEST TO CREATE
+                        I'M A <span className="text-red-400">FRONTEND DEVELOPER</span> ON AN EPIC QUEST TO CREATE
                         <span className="text-green-400"> LEGENDARY</span> DIGITAL EXPERIENCES.
                       </p>
                       <div className="stats-container border-2 border-amber-800 p-3 bg-stone-900 mb-6">
